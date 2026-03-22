@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 카카오톡 미리보기 OG 태그 -->
+  <meta property="og:title" content="Verame — 진짜 나를 발견하는 곳" />
+  <meta property="og:description" content="지인들이 보는 나는 어떤 사람일까요? 10문항으로 알아보는 나의 진짜 모습" />
+  <meta property="og:image" content="https://rbdk0.github.io/verame.github.io/og-image.png" />
+  <meta property="og:url" content="https://rbdk0.github.io/verame.github.io/" />
+  <meta property="og:type" content="website" />
+
+  <title>Verame — 진짜 나를 발견하는 곳</title>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, sans-serif; background: #f5f4ff; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+    .card { background: #fff; border-radius: 20px; padding: 48px 40px; max-width: 400px; width: 90%; text-align: center; }
+    .logo { font-size: 28px; font-weight: 700; color: #6B5FE4; margin-bottom: 8px; }
+    .tagline { font-size: 15px; color: #888; margin-bottom: 32px; }
+    .spinner { width: 32px; height: 32px; border: 3px solid #f0eeff; border-top-color: #6B5FE4; border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 16px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    p { color: #aaa; font-size: 13px; }
+  </style>
+
+  <script>
+    const params = window.location.search;
+    const BASE = 'https://script.google.com/macros/s/AKfycbzDapqKV01dKNxybt37LlKv5e_CEGRS9HeeZogfD1A-sDKiD-VOlKdAKjVk2OtFGMTc/exec';
+    window.location.replace(BASE + (params || ''));
+  </script>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">Verame</div>
+    <div class="tagline">진짜 나를 발견하는 곳</div>
+    <div class="spinner"></div>
+    <p>잠시만 기다려주세요...</p>
+  </div>
+</body>
+</html>
